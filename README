@@ -1,0 +1,31 @@
+NAME: qw2dv - QWERTY to DVORAK / DVORAK to QWERTY keyboard conversion utility
+
+SYNOPSIS: qw2dv [q|d] word_to_convert
+
+DESCRIPTION:
+
+	A silly little program that will simulate what would happen
+	if you overlayed another keyboard on yours.
+
+EXAMPLES:
+
+	qw2dv password		# convert password overlaid with a dvorak kb
+	laoo,rpe
+
+	qw2dv d password	# convert password typed on dvorak kb overlaid
+	ra;;,soh		# with a qwerty keyboard
+
+NOTES:
+
+	Keybaord mappings used. 95 characters:
+dv= `1234567890[]~!@#$%^&*(){}',.pyfgcrl/=\"<>PYFGCRL?+|aoeuidhtns-AOEUIDHTNS_;qjkxbmwvz:QJKXBMWVZ
+qw= `1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:"zxcvbnm,./ZXCVBNM<>?
+
+USES:
+
+	Can be used to obscure passwords or other messages.
+
+INSPIRATION: @dvst - Javier Perez
+
+Peter Hyman
+pete@peterhyman.com
