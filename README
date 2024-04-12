@@ -1,6 +1,7 @@
 NAME: qw2dv - QWERTY to DVORAK / DVORAK to QWERTY keyboard conversion utility
 
 SYNOPSIS: qw2dv [q|d] word_to_convert
+	  dv2qw word_to_convert
 
 DESCRIPTION:
 
@@ -15,11 +16,14 @@ EXAMPLES:
 	qw2dv d password	# convert password typed on dvorak kb overlaid
 	ra;;,soh		# with a qwerty keyboard
 
+	dv2qw password		# symlink to qw2dv implying `d` option
+	ra;;,soh
+
 NOTES:
 
-	Keybaord mappings used. 95 characters:
-dv= `1234567890[]~!@#$%^&*(){}',.pyfgcrl/=\"<>PYFGCRL?+|aoeuidhtns-AOEUIDHTNS_;qjkxbmwvz:QJKXBMWVZ
-qw= `1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:"zxcvbnm,./ZXCVBNM<>?
+	Keybaord mappings used. 96 characters:
+dv= ` 1234567890[]~!@#$%^&*(){}',.pyfgcrl/=\"<>PYFGCRL?+|aoeuidhtns-AOEUIDHTNS_;qjkxbmwvz:QJKXBMWVZ
+qw= ` 1234567890-=~!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:"zxcvbnm,./ZXCVBNM<>?
 
 USES:
 

@@ -7,6 +7,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <libgen.h>
+#include <string.h>
 
 // DVORAK
 static char dv[]=" `1234567890[]~!@#$%^&*(){}',.pyfgcrl/=\\\"<>PYFGCRL?+|aoeuidhtns-AOEUIDHTNS_;qjkxbmwvz:QJKXBMWVZ";
@@ -20,8 +22,13 @@ int main(int argc, char *argv[])
 {
 	int convert = 0;	// 0 = q to d, 1 = d to q
 	char *word_to_convert;
+	char *bn;		// basename of argv[0]
 
 	fprintf(stdout,"dv=%s\nqw=%s\n", dv, qw);
+
+	bn = basename(argv[0]);
+	if (!strcmp(bn,"dv2qw"))		// default to dvorak to qwerty
+		convert = 1;
 
 	if (argc == 1)
 	{
